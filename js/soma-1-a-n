@@ -1,0 +1,23 @@
+/** 
+ * Soma dos N primeiros números
+ *  Peça ao usuário um número N e calcule a soma de todos os números de 1 até N.
+ * 📌 Exemplo: Para N = 5, a soma é 1 + 2 + 3 + 4 + 5 = 15 
+*/
+
+/** Variáveis */
+let numero, total, i;
+
+/** Entrada de dados */
+numero = prompt("Digite um número: ");
+/** Atribuo 0, se não ele vai ser undefined e não vou conseguir 
+ * fazer operações matemáticas, será um NaN
+  */
+total = 0;
+
+/** Processamento */
+for(i = 0; i <= numero; i++) {
+  total += i;
+}
+
+/** Saida de dados */
+alert(total);
